@@ -1,7 +1,22 @@
 import Image from 'next/image';
+import Navbar from './components/Navbar';
+import HeroPage from './components/HeroPage';
+import About from './components/About';
+import TwoCard from './components/TwoCard';
+import Events from './components/Events';
+import Footer from './components/Footer';
+import Team from './components/Team';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main>
+      <Navbar />
+      <HeroPage />
+      <About />
+      <Events />
+      <TwoCard />
+      <Team />
+      <Footer />
+    </main>
   );
 }
